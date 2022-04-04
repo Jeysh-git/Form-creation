@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form1.css">
+        <title>Form</title>
+       
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- <div id="container1" onkeydown="applyDebounce()" onmousedown="applyDebounce()"> -->
+                <div id="container1" onkeydown="applyThrottle()" onmousedown="applyThrottle()">
+                <form name="form">
+                    
+                    <div class="field1">
+                        <label for ="name">Name : </label>
+                        <input type = "text" id="name" name="name" required>
+                        <input class="button1" type="button" value="clear">
+                    </div>
+
+                    <div class="field1"> 
+                        <label for ="email1">E-mail : </label>
+                        <input type = "email" id="email1" name="email" required>
+                        <input class="button1" type="button" value="clear">
+                    </div>
+
+                    <div class="field2"> 
+                       <b> Skills : </b>
+                        <div class="sub-field1">
+                            <label>C++</label>
+                            <input type="checkbox" name="skills" value="cpp">
+                        </div>
+                        <div class="sub-field1">
+                            <label>Javascript</label>
+                            <input type="checkbox" name="skills" value="JS">  
+                        </div>
+                        <input class="button1" type="button" value="clear">
+                    </div>
+
+                    <div class="field2">
+                      <b>  Gender : </b>
+                        <div class="sub-field1"> 
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="male" id="gender">
+                        </div>
+                        <div class="sub-field1">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" value="female" id="gender">  
+                        </div>
+                        <input class="button1" type="button" value="clear">
+                    </div>
+
+                    <div class="field1">
+                        <label for = "degree">Degree : </label>
+                        <select name="degree" id="degree">
+                            <option value="">Select</option>
+                            <option value="BE">BE</option>
+                            <option value="BTECH">BTECH</option>
+                            <input class="button1" type="button" value="clear">
+                        </select>
+                    </div>
+                
+                    <div class="field1">
+                        <label for="intro">Tell Me About Yourself : </label>
+                        <textarea id="intro" name="intro"></textarea>
+                        <input class="button1" type="button" value="clear">
+                    </div>
+                 
+                    <div class="field1">
+                        <label for="file">File : </label>
+                        <input id="file" type="file" name="file">
+                        <input class="button1" type="button" value="clear">
+                    </div>
+                </form>
+            </div>
+            
+            <div id="container2">
+                <div>
+                    <div>Uname : 
+                        <div class="value1">
+                            <p id="val1"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>E-mail : 
+                        <div class="value1">
+                            <p id="val2"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>Skills : 
+                        <div class="value1">
+                            <p id="val3"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>Gender : 
+                        <div class="value1">
+                            <p id="val4"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>Degree : 
+                        <div class="value1">
+                            <p id="val5"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>Tell me about yourself : 
+                        <div class="value1">
+                            <p id="val6"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>File : 
+                        <div class="value1">
+                            <p id="val7"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="formval.js"></script>
+
+    </body>
+
+</html>

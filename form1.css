@@ -1,0 +1,32 @@
+.main{
+   display: flex; 
+   justify-content: space-evenly;
+   border:1px solid;
+   height:500px;
+   height:100%;
+}
+
+#container1{
+    width:100%;
+}
+
+#container2{
+    width:100%;
+}
+
+div{
+    margin:20px;
+}
+
+.value1{
+    border: 1px solid blueviolet;
+    height:40px;
+}
+
+.button1{
+    margin:10px;
+}
+
+label{
+    font-weight: bold;
+}
